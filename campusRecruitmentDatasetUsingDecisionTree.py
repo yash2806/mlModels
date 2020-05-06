@@ -5,11 +5,6 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import train_test_split
 file_loc = '/home/tuesday/Dataset/Placement_Data_Full_Class.csv'
 df = pd.read_csv(file_loc)
-df.head()
-
-df.describe()
-
-df['salary']
 
 df['status'].replace("Placed",1,inplace=True)
 df['status'].replace("Not Placed",0,inplace=True)
