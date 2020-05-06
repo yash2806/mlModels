@@ -20,5 +20,5 @@ salary_model.fit(train_X,train_y)
 
 val_pred = salary_model.predict(val_X)
 mae = mean_absolute_error(val_pred,val_y)
-print("Mean Absolute Error is "+mae)
+print("Mean Absolute Error is ",mae)
 
